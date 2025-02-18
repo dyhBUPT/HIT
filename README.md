@@ -1,5 +1,6 @@
 # HIT
 **Hierarchical IoU Tracking based on Interval**
+
 [![arXiv](https://img.shields.io/badge/arXiv-2406.13271-<COLOR>.svg)](https://arxiv.org/abs/2406.13271)
 
 ## Abstract
@@ -131,4 +132,3 @@ You can integrate HIT with other trackers, for example:
   year={2024}
 }
 ```
->>>>>>> 52508b5... init commit
