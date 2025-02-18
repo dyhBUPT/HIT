@@ -1,0 +1,13 @@
+DATASET: MOT17
+SPLIT: val
+
+PARAMS:
+  ConsistentCamera:
+    enable: False
+  ConsistentMotion: False
+  motion_matching:
+    mode: hm_iou
+    thr: .2
+  iou_matching:
+    mode: hm_iou
+    thr: .2

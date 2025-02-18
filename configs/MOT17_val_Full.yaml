@@ -1,0 +1,5 @@
+DATASET: MOT17
+SPLIT: val
+
+PARAMS:
+  nms_thr: null

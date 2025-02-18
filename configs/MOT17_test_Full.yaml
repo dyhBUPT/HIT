@@ -1,0 +1,13 @@
+DATASET: MOT17
+SPLIT: test
+
+PARAMS:
+  ConsistentCamera:
+    enable: False
+  interpolation: True
+  post_trk:
+    min_len: null
+    merge:
+      mode: hm_iou
+      thr: .65
+    smooth: True

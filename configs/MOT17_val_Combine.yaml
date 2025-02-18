@@ -1,0 +1,19 @@
+DATASET: MOT17
+SPLIT: val
+
+PARAMS:
+  input_tracks: True
+  ConsistentCamera:
+    enable: False
+  ConsistentMotion: False
+  motion_matching:
+    mode: hm_iou
+    thr: .2
+  iou_matching:
+    mode: hm_iou
+    thr: .2
+  interpolation: True
+  post_trk:
+    min_len: null
+    merge: null
+    smooth: True

@@ -1,0 +1,26 @@
+DATASET: KITTI
+SPLIT: val
+
+PARAMS:
+  delta_t: [1, 2, 3, 4, 5, 7, 30, 5]
+  conf_thr:
+    low: .0
+    high: .0
+  ConsistentCamera:
+    enable: False
+  ConsistentMotion: False
+  interpolation: False
+  predictor:
+    predictor: Linear
+    delta_t: 5
+    preserve_scale: True
+  motion_matching:
+    mode: iou
+    thr: .2
+  iou_matching:
+    mode: iou
+    thr: .2
+  post_trk:
+    min_len: null
+    merge: null
+    smooth: False

@@ -1,0 +1,26 @@
+DATASET: DanceTrack
+SPLIT: val
+
+PARAMS:
+  delta_t: [1, 5, 10, 15, 20, 30, 5]
+  conf_thr:
+    low: .1
+    high: .6
+  ConsistentCamera:
+    enable: False
+  ConsistentMotion: False
+  interpolation: False
+  predictor:
+    predictor: Kalman
+    delta_t: 5
+    preserve_scale: False
+  motion_matching:
+    mode: hm_iou
+    thr: .2
+  iou_matching:
+    mode: hm_iou
+    thr: .2
+  post_trk:
+    min_len: null
+    merge: null
+    smooth: False

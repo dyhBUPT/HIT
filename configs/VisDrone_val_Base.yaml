@@ -1,0 +1,27 @@
+DATASET: VisDrone
+SPLIT: val
+
+PARAMS:
+  delta_t: [1, 3, 5, 7, 9, 5]
+  conf_thr:
+    low: .1
+    high: .6
+  nms_thr: .7
+  ConsistentCamera:
+    enable: False
+  ConsistentMotion: False
+  interpolation: False
+  predictor:
+    predictor: Kalman
+    delta_t: 5
+    preserve_scale: False
+  motion_matching:
+    mode: iou
+    thr: .2
+  iou_matching:
+    mode: iou
+    thr: .2
+  post_trk:
+    min_len: null
+    merge: null
+    smooth: False
